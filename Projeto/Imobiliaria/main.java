@@ -5,13 +5,12 @@ import Projeto.DAO.AgendaDAO;
 import Projeto.DAO.BancoDeDados;
 import Projeto.Entidades.UsuarioAdministrador;
 import Projeto.Entidades.UsuarioCliente;
-
 import java.sql.SQLException;
 import java.util.Scanner;
 
 import Excecoes.DadosInvalidosException;
 
-public class main {
+public class Main {
 
     public static void main(String[] args) throws DadosInvalidosException {
         Scanner scanner = new Scanner(System.in);
@@ -46,6 +45,7 @@ public class main {
 
                     case 3:
                         continuar = false; // Sair do loop
+                        BancoDeDados.fecharConexao();
                         System.out.println("Saindo do sistema...");
                         break;
 

@@ -1,8 +1,6 @@
 package Projeto.Imobiliaria;
 import Projeto.Entidades.UsuarioCliente;
-import Projeto.DAO.BancoDeDados;
 import Projeto.DAO.UsuarioClienteDAO;
-
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -11,11 +9,6 @@ public class MenuCliente {
         Scanner scanner = new Scanner(System.in);
         UsuarioClienteDAO usuarioClienteDAO = new UsuarioClienteDAO();
 
-        try {
-            // Conectar ao banco de dados
-            BancoDeDados.iniciarConexao();
-
-            System.out.println("Conexão ao banco de dados estabelecida com sucesso!");
 
             // Menu para escolher as operações
             while (true) {
@@ -49,8 +42,7 @@ public class MenuCliente {
                         deletarCliente(scanner, usuarioClienteDAO);
                         break;
                     case 5:
-                        BancoDeDados.fecharConexao();
-                        System.out.println("Conexão ao banco de dados encerrada.");
+    
                         return;
                     default:
                         System.out.println("Opção inválida!");
@@ -58,9 +50,7 @@ public class MenuCliente {
                 }
             }
 
-        } catch (SQLException e) {
-            System.err.println("Erro ao conectar ao banco de dados: " + e.getMessage());
-        }
+       
     }
 
     // Método para cadastrar um cliente

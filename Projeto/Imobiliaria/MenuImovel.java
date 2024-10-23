@@ -1,10 +1,7 @@
 package Projeto.Imobiliaria;
 
-import Projeto.DAO.BancoDeDados;
 import Projeto.DAO.ImovelDAO;
 import Projeto.Entidades.Imovel;
-
-import java.sql.SQLException;
 import java.util.Scanner;
 
 import Excecoes.DadosInvalidosException;
@@ -13,11 +10,6 @@ public class MenuImovel {
     public static void main(String[] args) throws DadosInvalidosException {
         Scanner scanner = new Scanner(System.in);
         ImovelDAO imovelDAO = new ImovelDAO();
-
-        try {
-            // Conectar ao banco de dados
-            BancoDeDados.iniciarConexao();
-            System.out.println("Conexão ao banco de dados estabelecida com sucesso!");
 
             // Menu para escolher as operações
             while (true) {
@@ -51,8 +43,7 @@ public class MenuImovel {
                         deletarImovel(scanner, imovelDAO);
                         break;
                     case 5:
-                        BancoDeDados.fecharConexao();
-                        System.out.println("Conexão ao banco de dados encerrada.");
+                    
                         return;
                     default:
                         System.out.println("Opção inválida!");
@@ -60,9 +51,7 @@ public class MenuImovel {
                 }
             }
 
-        } catch (SQLException e) {
-            System.err.println("Erro ao conectar ao banco de dados: " + e.getMessage());
-        }
+       
     }
 
     // Método para cadastrar um imóvel

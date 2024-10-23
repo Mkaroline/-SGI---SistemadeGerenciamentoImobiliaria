@@ -1,8 +1,6 @@
 package Projeto.Imobiliaria;
 import Projeto.Entidades.Contrato;
-import Projeto.DAO.BancoDeDados;
 import Projeto.DAO.ContratoDAO;
-
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -14,11 +12,6 @@ public class MenuContrato {
         Scanner scanner = new Scanner(System.in);
         ContratoDAO contratoDAO = new ContratoDAO();
 
-        try {
-            // Conectar ao banco de dados
-            BancoDeDados.iniciarConexao();
-
-            System.out.println("Conexão ao banco de dados estabelecida com sucesso!");
 
             // Menu para escolher as operações
             while (true) {
@@ -52,8 +45,7 @@ public class MenuContrato {
                         deletarContrato(scanner, contratoDAO);
                         break;
                     case 5:
-                        BancoDeDados.fecharConexao();
-                        System.out.println("Conexão ao banco de dados encerrada.");
+                        
                         return;
                     default:
                         System.out.println("Opção inválida!");
@@ -61,9 +53,6 @@ public class MenuContrato {
                 }
             }
 
-        } catch (SQLException e) {
-            System.err.println("Erro ao conectar ao banco de dados: " + e.getMessage());
-        }
     }
 
     // Método para cadastrar um contrato
