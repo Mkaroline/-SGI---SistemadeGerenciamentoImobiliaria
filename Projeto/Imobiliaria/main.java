@@ -7,7 +7,6 @@ import Projeto.Entidades.UsuarioAdministrador;
 import Projeto.Entidades.UsuarioCliente;
 import java.sql.SQLException;
 import java.util.Scanner;
-
 import Excecoes.DadosInvalidosException;
 
 public class Main {
