@@ -32,7 +32,7 @@
     * Hospedagem do código;
  *  [Astah UML]
     * Criação do diagrama de classe;
- * [Lucidchart] (
+ * [Lucidchart]
  *  [Visual Studio Code]
     * Criação do código;
  * [PostgreSQL]
