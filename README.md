@@ -1,4 +1,3 @@
-## **: Projeto Detalhado de software
 ## **:computer:** Sistema de Gerenciamento Imobiliaria (SGI)
 
 ## **:computer:** Descrição do Sistema 
