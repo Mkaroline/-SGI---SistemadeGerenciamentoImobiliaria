@@ -1,4 +1,5 @@
-<h1 align="Center""> Sistema de Gerenciamento Imobiliaria (SGI)</h1>
+<h1 align="center">  Projeto Detalhado de Software </h1>
+<h1 align="center"> Sistema-de-Gerenciamento-Imobiliario-SGI </h1>
 
 <h1 align="Justify"> Descrição do Sistema </h1>
 
