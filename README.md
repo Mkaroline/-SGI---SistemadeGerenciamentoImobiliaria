@@ -24,3 +24,16 @@
 :woman_teacher: Docente: [Huliane Medeiros da Silva]().<br />
 :woman_student: Discente: [Maria Karoline Firmino de Moura](https://github.com/Mkaroline).<br />
 :woman_student: Discente: [Renan Lucas Melo de Oliveira](https://github.com/RenanLucas19).<br />
+
+## **:hammer_and_wrench:** Ferramentas utilizadas
+ *  [Meet]
+    * Chamada via meet (Reuniões e compartilhamento de tela ao vivo);    
+ *  [Git e Github]
+    * Hospedagem do código;
+ *  [Astah UML]
+    * Criação do diagrama de classe;
+ * [Lucidchart] (
+ *  [Visual Studio Code]
+    * Criação do código;
+ * [PostgreSQL]
+   * Banco de Dados.
